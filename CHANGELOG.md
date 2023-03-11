@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.2...v1.0.3) (2023-03-11)
+
+
+### update
+
+* 修改组件、优化api ([7e771f6](https://github.com/School-of-Website-Engineering/CRM-Vue/commit/7e771f62dd2513415b9e7429a9c89d18f3026b36))
+
 ## [1.0.2](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.1...v1.0.2) (2023-03-11)
 
 
