@@ -1,0 +1,1 @@
+import{_ as o}from"./index-99c6d1ce.js";import{o as n,l as r,z as e}from"./vendor-f363660c.js";const s={},t=[e("h3",null,"Welcome",-1)];const l=o(s,[["render",function(o,e){return n(),r("div",null,t)}]]);export{l as default};
