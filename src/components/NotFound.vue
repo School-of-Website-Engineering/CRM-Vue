@@ -10,31 +10,30 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import { reactive } from 'vue';
 // import WeatherService from '@/api/test/testApi.ts'; // 引入WeatherService
-import GoodsIdService from '@/api/test/testApi.ts';
+import GoodsIdService, { Goods } from '@/api/test';
 
-export default {
-    name: 'NotFound',
-
-    setup() {
-        const letters = ['4', '0', '4'];
-        const animated = reactive([false, false, false]);
-        const animate = () => {
-            animated.forEach((_, index) => {
-                setTimeout(() => (animated[index] = true), index * 150);
-            });
-        };
-        // 通过调用WeatherService.getWeather()方法获取天气数据//使用async/await
-        const getTest = async() => {
-            const test = await GoodsIdService.getGoodsId('12');
-            console.log(test);
-        };
-        getTest();
-        return { letters, animate, animated };
-    }
+const goods = reactive<Goods>({
+    id   : 0,
+    name : '',
+    price: 0,
+    stock: 0
+});
+const letters = ['4', '0', '4'];
+const animated = reactive([false, false, false]);
+const animate = () => {
+    animated.forEach((_, index) => {
+        setTimeout(() => (animated[index] = true), index * 150);
+    });
 };
+// 通过调用WeatherService.getWeather()方法获取天气数据//使用async/await
+const getTest = async() => {
+    const test = await GoodsIdService.getGoodsId('12');
+    console.log(test);
+};
+getTest();
 </script>
 
 <style lang="scss">
