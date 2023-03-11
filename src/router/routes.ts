@@ -25,6 +25,21 @@ export const routes: Array<RouteRecordRaw> = [
                 name     : 'index',
                 component: () => import('@/views/Index/index.vue')
             },
+            {
+                path     : '/order',
+                name     : 'order',
+                component: () => import('@/views/Order/index.vue')
+            },
+            {
+                path     : '/census',
+                name     : 'census',
+                component: () => import('@/views/Census/index.vue')
+            },
+            {
+                path     : '/monitor',
+                name     : 'monitor',
+                component: () => import('@/views/Monitor/index.vue')
+            },
             //     欢迎页
             {
                 path     : '/welcome',
