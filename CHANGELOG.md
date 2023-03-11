@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.3...v1.0.4) (2023-03-11)
+
+
+### update
+
+* 添加mock、pinia的使用 ([2b251e6](https://github.com/School-of-Website-Engineering/CRM-Vue/commit/2b251e63d69e541de5124c8c323fab3b2185139e))
+
 ## [1.0.3](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.2...v1.0.3) (2023-03-11)
 
 
