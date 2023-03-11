@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.1...v1.0.2) (2023-03-11)
+
+
+### update
+
+* 拆分组件 ([0219dd6](https://github.com/School-of-Website-Engineering/CRM-Vue/commit/0219dd6c086523eba3eb11e490767bcd0263b8b8))
+
 ## [1.0.1](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.0...v1.0.1) (2023-03-10)
 
 
