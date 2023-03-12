@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.4...v1.0.5) (2023-03-12)
+
+
+### update
+
+* npm=&gt;yarn、添加mock数据 ([977fb92](https://github.com/School-of-Website-Engineering/CRM-Vue/commit/977fb928d5571ee7b2c876bbdfacd6f7fa290cac))
+
 ## [1.0.4](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.3...v1.0.4) (2023-03-11)
 
 
