@@ -68,9 +68,6 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
                 //是否开启本地mock
                 localEnabled: true
             })
-            //     q:mockjs请求服务器地址在哪里？
-            // a:在vite.config.ts中配置proxy
-            //     q：如何配置？
         ],
         base: '/CRM-Vue/',
         css : {
