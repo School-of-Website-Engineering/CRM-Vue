@@ -7,12 +7,22 @@
 </template>
 
 <script setup lang="ts">
+import UserService, { UserDataState } from '@/api/user';
 //定义接口
 interface TableData {
     date: string;
     name: string;
     address: string;
 }
+
+// 请求表格数据
+const getTableData = async() => {
+    const res = await UserService.getUserData();
+    console.log(res);
+};
+getTableData();
+
+//定义数据
 const tableData: Array<TableData> = [
     {
         date   : '2016-05-03',
