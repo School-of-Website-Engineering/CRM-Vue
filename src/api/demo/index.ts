@@ -21,25 +21,25 @@ export interface AddressInfo {
     district?: string;
 }
 export interface UserApi {
-    login(data: LoginParams): Promise<string>;
-    getInfo(): Promise<UserInfo>;
-    logout(): Promise<void>;
-    getAddress(userId: number): Promise<AddressInfo>;
+    login(data: LoginParams): Promise<Response>;
+    getInfo(): Promise<Response>;
+    logout(): Promise<Response>;
+    getAddress(userId: number): Promise<Response>;
 }
 
 class UserService implements UserApi {
-    login(data: LoginParams): Promise<string> {
+    login(data: LoginParams): Promise<Response> {
         return http.post(USER_LOGIN, data);
     }
 
-    getInfo(): Promise<UserInfo> {
+    getInfo(): Promise<Response> {
         return http.get(USER_INFO);
     }
 
-    logout(): Promise<void> {
+    logout(): Promise<Response> {
         return http.post(USER_LOGOUT);
     }
-    getAddress(userId: number): Promise<AddressInfo> {
+    getAddress(userId: number): Promise<Response> {
         return http.get(USER_ADDRESS, { params: { userId } });
     }
 }

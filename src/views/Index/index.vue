@@ -7,44 +7,15 @@
 </template>
 
 <script setup lang="ts">
+import { reactive } from 'vue';
 import UserService, { UserDataState } from '@/api/user';
-//定义接口
-interface TableData {
-    date: string;
-    name: string;
-    address: string;
-}
-
+const tableData = ref<UserDataState[]>([]);
 // 请求表格数据
 const getTableData = async() => {
     const res = await UserService.getUserData();
     console.log(res);
 };
 getTableData();
-
-//定义数据
-const tableData: Array<TableData> = [
-    {
-        date   : '2016-05-03',
-        name   : 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
-    },
-    {
-        date   : '2016-05-02',
-        name   : 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
-    },
-    {
-        date   : '2016-05-04',
-        name   : 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
-    },
-    {
-        date   : '2016-05-01',
-        name   : 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
-    }
-];
 </script>
 
 <style lang="scss" scoped></style>

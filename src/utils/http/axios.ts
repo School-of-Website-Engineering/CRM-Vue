@@ -3,12 +3,15 @@ import type { Response } from './types';
 // import { Toast } from 'vant';
 import { ElMessage } from 'element-plus';
 import router from '@/router';
+// 重设axiosbaseURL
+axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASE_URL;
+axios.defaults.timeout = 1000 * 10;
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 
 // 创建axios实例
 const service = axios.create({
     // 根据不同env设置不同的baseURL
     baseURL          : import.meta.env.VITE_APP_API_BASE_URL,
-    timeout          : 15000,
     responseType     : 'json',
     transformResponse: [
         function(data) {

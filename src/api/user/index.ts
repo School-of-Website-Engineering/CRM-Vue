@@ -6,21 +6,21 @@ export interface UserState {
     username: string;
 }
 export interface UserDataState {
-    data: string;
+    date: string;
     name: string;
     address: string;
 }
 
 export interface userApi {
-    getUserLogin(userData: object): Promise<UserState>;
-    getUserData(): Promise<UserDataState>;
+    getUserLogin(userData: object): Promise<Response>;
+    getUserData(): Promise<{ data: UserDataState }>;
 }
 
 class UserService implements userApi {
-    getUserLogin(userData: object): Promise<UserState> {
+    getUserLogin(userData: object): Promise<Response> {
         return http.post(USER_LOGIN, { userData });
     }
-    getUserData(): Promise<UserDataState> {
+    getUserData(): Promise<{ data: UserDataState }> {
         return http.get(USER_DATA);
     }
 }

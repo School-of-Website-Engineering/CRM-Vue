@@ -2,6 +2,7 @@
 <!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
 
 <!-- ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%AE%8C%E6%88%90-brightgreen) -->
+
 ![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E4%B8%AD-green)<!--![](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E5%B0%B1%E7%BB%AA-orange)-->
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
@@ -118,10 +119,18 @@ yarn run build
 执行命令后会得到 dist 目录，可以放到自己的 web 服务器指定的路径下，然后访问即可。
 
 或者运行:
+
 ```
 yarn run preview
 ```
+
 进行生产预览
+
+---
+
+**注意事项：**
+
+如果出现`"cygpath: command not found" when commiting to branch`错误，请添加你的 Path 环境变量:`C:\Program Files\Git\usr\bin`，更多信息请参考["cygpath: command not found" when commiting to branch #10326](https://github.com/desktop/desktop/issues/10326)
 
 ---
 
