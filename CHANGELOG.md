@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.5...v1.0.6) (2023-03-17)
+
+
+### update
+
+* 更改promise返回类型 ([b2ad5a4](https://github.com/School-of-Website-Engineering/CRM-Vue/commit/b2ad5a4ccb210b34c50634e08fb76ee598bb12d6))
+
 ## [1.0.5](https://github.com/School-of-Website-Engineering/CRM-Vue/compare/v1.0.4...v1.0.5) (2023-03-12)
 
 
