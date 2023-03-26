@@ -12,7 +12,13 @@
     "lint": "eslint --fix  vite.config.ts tsconfig.json .eslintrc.cjs --ext .cjs,.js,.vue,.ts,.html, src",
     "prettier": "prettier --write ./**/*.{js,ts,vue,json,html,css,scss}",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "clean-cache": "npm cache clean --force && rm -rf node_modules && rm -rf package-lock.json && npm install",
+    "ts-build": "tsc && vite build",
+    "sass-build": "node-sass src/ -o dist/",
+    "e2e-test": "npm run serve & cypress open",
+    "dev-proxy": "vite --mode development --proxy http://localhost:3000",
+    "deploy-gh-pages": "vue-tsc && vite build && echo '部署至gh-pages' > dist/CNAME && npx gh-pages -d dist"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
