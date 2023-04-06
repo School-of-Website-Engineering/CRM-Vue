@@ -66,7 +66,9 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
                 //mock文件夹路径
                 mockPath    : './src/mock',
                 //是否开启本地mock
-                localEnabled: true
+                localEnabled: true,
+                //     开启生产环境mock
+                prodEnabled : true
             })
         ],
         base: '/CRM-Vue/',
@@ -91,7 +93,7 @@ function defineConfig({ command, mode }: DefineConfigOptions) {
                     rewrite     : (path: string) => path.replace(/^\/api-dev/, '')
                 },
                 '/api-pro': {
-                    target      : 'http://www.weather.com.cn',
+                    target      : 'http://localhost:3000/',
                     changeOrigin: true,
                     rewrite     : (path: string) => path.replace(/^\/api-pro/, '')
                 }
